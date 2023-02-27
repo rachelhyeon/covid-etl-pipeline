@@ -1,5 +1,4 @@
 # COVID-19 Data ETL Pipeline
-ETL pipeline for COVID-19 hospital data from HHS and CMS using PostgreSQL and Psycopg.
 
 This repository contains two scripts. The script `load-hhs.py` is used to load, clean, and insert/update weekly hospital data from the US Department of Health and Human Services (HHS) about hospitals throughout the US into PostgreSQL table called `Hospitals` and `Averages`. The script `load-quality.py` is used to load, clean, and insert/update weekly hospital data from a hospital quality dataset from the Centers for Medicare and Medicaid Services (CMS) into PostgreSQL tables called `Hospitals` and `Statuses`. Before loading the data, it is important to first create PostgreSQL tables (named `Hospitals`, `Averages`, and `Statuses`) using the `CREATE TABLE` commands found in `drummers_part2.sql` file.
 
