@@ -1,9 +1,3 @@
-/* 36-614 Data Engineering and Distributed Environments
-Project Part 1
-Team: Drummers
-Members: Sean Tavares, Myung Kyung (Rachel) Hyeon, Xi Chen
-*/
-
 CREATE TABLE Hospitals (
 hospital_id varchar PRIMARY KEY,
 hospital_name varchar,
