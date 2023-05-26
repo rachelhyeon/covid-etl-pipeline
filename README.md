@@ -6,6 +6,8 @@ The script `load-hhs.py` should be used to load csv files from the `hhs_data` su
 
 The script `weekly-report.ipynb` is used to create a report of hospital metrics in the past week. This script should be ran after loading data with the above two scripts. After being executed, the `weekly-report.ipynb` will create an HTML file that the user can open to evaluate hospital analytics.
 
+---
+
 ### Executing `load-hhs.py` script
 
 You can run the `load-hhs.py` script by executing the following command in terminal:
@@ -19,6 +21,8 @@ For example:
 python load-hhs.py 2022-01-04-hhs-data.csv
 ```
 command would insert data from `2022-01-04-hhs-data.csv` into the `Hospitals` and `Averages` tables in PostgreSQL.
+
+---
 
 ### Executing `load-quality.py` script
 
@@ -34,6 +38,7 @@ python load-quality.py 2021-07-01 Hospital_General_Information-2021-07.csv
 ```
 command would insert data from `Hospital_General_Information-2021-07.csv` into the `Statuses` table and update `county`, `type`, and `ownership` columns in the `Hospitals` table in PostgreSQL.
 
+---
 
 ### Executing `weekly-report.ipynb` script
 
